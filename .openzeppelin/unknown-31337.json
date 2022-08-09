@@ -1,0 +1,159 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+    "txHash": "0x8d7053f6363858b46c7af8b25d51b4381f3af8c41dcc738b9908c1e473965f44"
+  },
+  "proxies": [
+    {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x3291fd4190a3eed7c9aef8d67521778910beef23d05706a2a2c31485dc113bbe",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "ae3c636770b123b52dc04543b1627c835047f2294e74d9b03874930fbe969be8": {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x7298ce1ce0b8e80c2a640bb7a5c891003a87a7ecc92d87c159e71dea27614318",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "currencyToken",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_contract(IERC20)1170",
+            "contract": "Market",
+            "src": "contracts/Market.sol:15"
+          },
+          {
+            "label": "itemToken",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC721)2178",
+            "contract": "Market",
+            "src": "contracts/Market.sol:16"
+          },
+          {
+            "label": "_trades",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(Trade)2834_storage)",
+            "contract": "Market",
+            "src": "contracts/Market.sol:25"
+          },
+          {
+            "label": "tradeCounter",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "Market",
+            "src": "contracts/Market.sol:27"
+          },
+          {
+            "label": "soldItemsCounter",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "Market",
+            "src": "contracts/Market.sol:28"
+          },
+          {
+            "label": "canceledItemsCounter",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "Market",
+            "src": "contracts/Market.sol:29"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1170": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC721)2178": {
+            "label": "contract IERC721",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_uint256,t_struct(Trade)2834_storage)": {
+            "label": "mapping(uint256 => struct Market.Trade)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Trade)2834_storage": {
+            "label": "struct Market.Trade",
+            "members": [
+              {
+                "label": "index",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "poster",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "item",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "status",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

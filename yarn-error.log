@@ -1,0 +1,48 @@
+Arguments: 
+  /Users/akharawitaryakom/.nvm/versions/node/v16.13.0/bin/node /Users/akharawitaryakom/.yarn/bin/yarn.js
+
+PATH: 
+  /opt/homebrew/opt/php@8.0/sbin:/opt/homebrew/opt/php@8.0/bin:/Users/akharawitaryakom/.yarn/bin:/Users/akharawitaryakom/.config/yarn/global/node_modules/.bin:/Users/akharawitaryakom/.nvm/versions/node/v16.13.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/opt/php@8.0/sbin:/opt/homebrew/opt/php@8.0/bin:/Users/akharawitaryakom/.yarn/bin:/Users/akharawitaryakom/.config/yarn/global/node_modules/.bin:/Users/akharawitaryakom/.nvm/versions/node/v16.13.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/akharawitaryakom/.cargo/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/akharawitaryakom/Documents/SmartCon-Projects/templar-random-nft/package.json: Unexpected token } in JSON at position 550
+      at JSON.parse (<anonymous>)
+      at /Users/akharawitaryakom/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/akharawitaryakom/.yarn/lib/cli.js:310:30)
+      at /Users/akharawitaryakom/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "hardhat-project",
+    "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+      "hardhat": "^2.10.1"
+    },
+    "dependencies": {
+      "@chainlink/contracts": "^0.4.2",
+      "@openzeppelin/contracts": "^4.7.2"
+    },
+    "scripts": {
+      "test": "hardhat test",
+      "test:debug": "mocha --inspect-brk",
+      "test:coverage": "hardhat coverage --testfiles \"{test/*.test.ts,test/harness/*.test.ts}\"",
+      "rinkeby:deploy": "hardhat run scripts/deploy.ts --network rinkeby",
+      "test:gas": "cross-env REPORT_GAS=true yarn test"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
